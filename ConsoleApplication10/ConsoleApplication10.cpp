@@ -3,6 +3,7 @@ using namespace std;
 
 int fibonacci(int n) 
 {
+    // Базовые случаи
     if (n == 0) {
         return 0;
     }
@@ -10,7 +11,7 @@ int fibonacci(int n)
     {
         return 1;
     }
-
+    // Рекурсивный вызов для вычисления n-ого числа Фибоначчи
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
