@@ -11,7 +11,6 @@ int ackermann(int m, int n)
 
     // Рекурсивный вызов для остальных случаев
     return ackermann(m - 1, ackermann(m, n - 1));
-}
 
 int main() 
 {
@@ -20,5 +19,4 @@ int main()
     cout << "Введите два неотрицательных числа m и n: ";
     cin >> m >> n;
     cout << "A(" << m << ", " << n << ") = " << ackermann(m, n) << endl;
-    return 0;
 }
